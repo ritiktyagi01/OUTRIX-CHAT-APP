@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333333;
+}
+
+/* Main container */
+.container-mains {
+    margin-left: 20px;
+    height: 700px;
+    width: 40%;
+    background-color: #f0f2f5;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Search bar */
+.searchdiv {
+    margin: 10px 0 0 10px;
+    display: flex;
+    width: 90%;
+}
+
+.searchdiv button {
+    width: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Fetch chats button */
+.bfetchchats {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin: 2px;
+    background: none;
+    cursor: pointer;
+}
+
+/* Group chat section */
+.Gchat {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.Gchat button {
+    margin-left: 10px;
+    background-color: #a6caa7;
+    border-radius: 10px;
+    margin-left: 100px;
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* ✅ Background overlay with blur effect */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3); /* Semi-transparent black */
+    backdrop-filter: blur(2px); /* Adds blur effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9998; /* Below pop-up but above everything else */
+}
+
+/* ✅ Pop-up styling */
+.Gchat-pop {
+    position: absolute;
+    width: 470px;
+    min-height: 200px;
+    max-height: 600px;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    border: 1px solid grey;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 9999; /* Ensure it appears above overlay */
+    
+    /* Center the pop-up */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Input fields */
+.Gchat-pop input {
+    width: 80%;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #f7f7f7;
+    outline: none;
+}
+
+/* Pop-up buttons */
+.Gchat-pop button {
+    height: 50px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    background: indigo;
+    color: white;
+    border-radius: 10px;
+    padding: 8px 12px;
+    transition: 0.3s;
+    font-size: 12px;
+   
+}
+.creategroupb button{
+    background: #4CAF50;
+}
+.Gchat-pop button:hover {
+    background: #45a049;
+}
+
+/* User items */
+.user-itemss {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+.user-itemss button {
+    width: 90%;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+/* User names */
+.user-itemss h2 {
+    padding-left: 15px;
+    font-size: 16px;
+}
+
+/* Chat container */
+.chatting-cont {
+    position: absolute;
+    margin-left: 610px;
+    height: 900px;
+    width: 1400px;
+    margin-top: -368px;
+    
+        
+}
+.search-results {
+    position: absolute;
+    top: 210px; /* Adjust based on where your search input is */
+    left: 200px;
+    width: 300px;
+    max-height: 300px;
+    overflow-y: auto;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    z-index: 1000;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btnforgp {
+    position: absolute;
+    
+}
+

@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+}
+
+.container1{
+    height: 70px;
+    width: 100%;
+    background-color: #008069;
+    display: flex;
+    align-items: center;
+    
+}
+
+.container1 h1{
+    padding-top: 10px;
+    padding-left: 490px;
+}
+
+
+.container1 i{
+    margin-left: 560px;
+}
